@@ -20,9 +20,12 @@ body{
 
     color:white;
 
+
     background:#050505;
 
 }
+
+
 
 
 
@@ -31,6 +34,7 @@ body{
 
 
     position:fixed;
+
 
     inset:0;
 
@@ -67,7 +71,7 @@ body{
     width:100%;
 
 
-    max-width:720px;
+    max-width:760px;
 
 
     margin:auto;
@@ -94,6 +98,7 @@ body{
 
 
 
+
 .logo{
 
 
@@ -109,10 +114,11 @@ body{
     object-fit:cover;
 
 
-    margin-bottom:20px;
+    margin-bottom:22px;
 
 
 }
+
 
 
 
@@ -140,7 +146,7 @@ body{
 .logo-area p{
 
 
-    margin-top:10px;
+    margin-top:12px;
 
 
     color:#aaa;
@@ -156,51 +162,28 @@ body{
 
 
 
-
 .english-title{
 
 
-    margin-top:14px;
+    margin-top:18px;
 
 
-    font-size:12px;
+    font-size:11px;
 
 
-    letter-spacing:4px;
+    letter-spacing:5px;
 
 
-    color:rgba(255,255,255,.38);
+    color:rgba(255,255,255,.28);
+
+
+    text-transform:uppercase;
 
 
     font-weight:500;
 
 
 }
-
-
-
-
-
-
-
-
-.desc{
-
-
-    text-align:center;
-
-
-    margin:35px auto 45px;
-
-
-    color:#aaa;
-
-
-    line-height:1.8;
-
-
-}
-
 
 
 
@@ -219,7 +202,11 @@ body{
     gap:18px;
 
 
+    margin-top:38px;
+
+
 }
+
 
 
 
@@ -235,7 +222,7 @@ body{
     align-items:center;
 
 
-    gap:20px;
+    gap:22px;
 
 
     padding:22px;
@@ -274,6 +261,7 @@ body{
 
 
 
+
 .card:hover{
 
 
@@ -287,6 +275,7 @@ body{
 
 
 }
+
 
 
 
@@ -326,7 +315,6 @@ body{
 
 
 
-
 .card span{
 
 
@@ -343,6 +331,7 @@ body{
 
 
 
+
 .title-with-icon{
 
 
@@ -352,7 +341,7 @@ body{
     align-items:center;
 
 
-    gap:10px;
+    gap:12px;
 
 
     margin:0 0 8px;
@@ -369,10 +358,13 @@ body{
 .recommend-icon{
 
 
-    height:22px;
+    height:26px;
 
 
     width:auto;
+
+
+    margin-left:4px;
 
 
     display:inline-block;
@@ -408,9 +400,7 @@ footer{
 
 
 
-
 @media(max-width:500px){
-
 
 
     .container{
@@ -423,7 +413,6 @@ footer{
 
 
 
-
     .logo-area h1{
 
 
@@ -431,7 +420,6 @@ footer{
 
 
     }
-
 
 
 
