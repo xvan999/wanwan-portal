@@ -334,18 +334,15 @@ body{
 
 .title-with-icon{
 
-
     display:flex;
-
 
     align-items:center;
 
-
     gap:12px;
-
 
     margin:0 0 8px;
 
+    line-height:1;
 
 }
 
@@ -357,18 +354,19 @@ body{
 
 .recommend-icon{
 
-
-    height:26px;
-
+    height:34px;
 
     width:auto;
 
+    margin-left:6px;
 
-    margin-left:4px;
+    display:inline-flex;
 
+    align-items:center;
 
-    display:inline-block;
+    vertical-align:middle;
 
+    object-fit:contain;
 
 }
 
