@@ -3,13 +3,11 @@
 }
 
 
-
 body{
 
     margin:0;
 
     min-height:100vh;
-
 
     font-family:
     -apple-system,
@@ -17,9 +15,7 @@ body{
     "Segoe UI",
     sans-serif;
 
-
     color:white;
-
 
     background:#050505;
 
@@ -27,20 +23,13 @@ body{
 
 
 
-
-
-
 .background{
-
 
     position:fixed;
 
-
     inset:0;
 
-
     background:
-
 
     radial-gradient(
         circle at top,
@@ -48,13 +37,11 @@ body{
         transparent 40%
     ),
 
-
     radial-gradient(
         circle at bottom,
         rgba(168,85,247,.25),
         transparent 45%
     );
-
 
     z-index:-1;
 
@@ -64,24 +51,17 @@ body{
 
 
 
-
 .container{
-
 
     width:100%;
 
-
     max-width:760px;
-
 
     margin:auto;
 
-
     padding:80px 20px 60px;
 
-
 }
-
 
 
 
@@ -89,37 +69,26 @@ body{
 
 .logo-area{
 
-
     text-align:center;
 
-
 }
-
 
 
 
 
 .logo{
 
-
     width:90px;
-
 
     height:90px;
 
-
     border-radius:24px;
-
 
     object-fit:cover;
 
-
     margin-bottom:22px;
 
-
 }
-
-
 
 
 
@@ -127,15 +96,11 @@ body{
 
 .logo-area h1{
 
-
     margin:0;
-
 
     font-size:38px;
 
-
     font-weight:700;
-
 
 }
 
@@ -145,15 +110,11 @@ body{
 
 .logo-area p{
 
-
     margin-top:12px;
-
 
     color:#aaa;
 
-
     font-size:18px;
-
 
 }
 
@@ -164,26 +125,20 @@ body{
 
 .english-title{
 
-
     margin-top:18px;
-
 
     font-size:11px;
 
-
     letter-spacing:5px;
-
 
     color:rgba(255,255,255,.28);
 
-
     text-transform:uppercase;
-
 
     font-weight:500;
 
-
 }
+
 
 
 
@@ -192,18 +147,13 @@ body{
 
 .cards{
 
-
     display:flex;
-
 
     flex-direction:column;
 
-
     gap:18px;
 
-
     margin-top:38px;
-
 
 }
 
@@ -212,30 +162,21 @@ body{
 
 
 
-
 .card{
-
 
     display:flex;
 
-
     align-items:center;
 
-
-    gap:22px;
-
+    gap:20px;
 
     padding:22px;
 
-
     text-decoration:none;
-
 
     color:white;
 
-
     background:
-
 
     rgba(255,255,255,.08);
 
@@ -245,7 +186,6 @@ body{
 
     border:
 
-
     1px solid rgba(255,255,255,.12);
 
 
@@ -253,7 +193,6 @@ body{
 
 
     transition:.3s;
-
 
 }
 
@@ -264,15 +203,11 @@ body{
 
 .card:hover{
 
-
     transform:translateY(-5px);
-
 
     background:
 
-
     rgba(255,255,255,.15);
-
 
 }
 
@@ -284,9 +219,7 @@ body{
 
 .icon{
 
-
     font-size:35px;
-
 
 }
 
@@ -298,15 +231,11 @@ body{
 
 .card h2{
 
-
     margin:0 0 8px;
-
 
     font-size:20px;
 
-
     font-weight:700;
-
 
 }
 
@@ -317,12 +246,9 @@ body{
 
 .card span{
 
-
     color:#aaa;
 
-
     font-size:14px;
-
 
 }
 
@@ -331,6 +257,7 @@ body{
 
 
 
+/* AI标题 + 推荐标签 */
 
 .title-with-icon{
 
@@ -338,11 +265,13 @@ body{
 
     align-items:center;
 
-    gap:12px;
+    gap:10px;
 
     margin:0 0 8px;
 
-    line-height:1;
+    font-size:20px;
+
+    font-weight:700;
 
 }
 
@@ -351,18 +280,15 @@ body{
 
 
 
+/* 推荐图标 */
 
 .recommend-icon{
 
-    height:34px;
+    height:26px;
 
     width:auto;
 
-    margin-left:6px;
-
-    display:inline-flex;
-
-    align-items:center;
+    display:inline-block;
 
     vertical-align:middle;
 
@@ -378,18 +304,13 @@ body{
 
 footer{
 
-
     text-align:center;
-
 
     margin-top:50px;
 
-
     color:#666;
 
-
     font-size:14px;
-
 
 }
 
@@ -403,9 +324,7 @@ footer{
 
     .container{
 
-
         padding:60px 18px 50px;
-
 
     }
 
@@ -413,9 +332,7 @@ footer{
 
     .logo-area h1{
 
-
         font-size:32px;
-
 
     }
 
@@ -423,9 +340,15 @@ footer{
 
     .card{
 
-
         padding:18px;
 
+    }
+
+
+
+    .recommend-icon{
+
+        height:24px;
 
     }
 
