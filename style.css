@@ -50,7 +50,6 @@ body{
 
 
 
-
 .container{
 
     width:100%;
@@ -93,7 +92,6 @@ body{
 
 
 
-
 .logo-area h1{
 
     margin:0;
@@ -103,7 +101,6 @@ body{
     font-weight:700;
 
 }
-
 
 
 
@@ -144,7 +141,6 @@ body{
 
 
 
-
 .cards{
 
     display:flex;
@@ -176,17 +172,21 @@ body{
 
     color:white;
 
+
     background:
 
     rgba(255,255,255,.08);
 
 
+
     backdrop-filter:blur(20px);
+
 
 
     border:
 
     1px solid rgba(255,255,255,.12);
+
 
 
     border-radius:24px;
@@ -195,7 +195,6 @@ body{
     transition:.3s;
 
 }
-
 
 
 
@@ -244,6 +243,7 @@ body{
 
 
 
+
 .card span{
 
     color:#aaa;
@@ -257,7 +257,8 @@ body{
 
 
 
-/* AI标题 + 推荐标签 */
+
+/* AI标题 */
 
 .title-with-icon{
 
@@ -265,7 +266,7 @@ body{
 
     align-items:center;
 
-    gap:10px;
+    gap:12px;
 
     margin:0 0 8px;
 
@@ -280,19 +281,72 @@ body{
 
 
 
-/* 推荐图标 */
 
-.recommend-icon{
+/* 推荐标签 */
 
-    height:26px;
+.recommend-badge{
 
-    width:auto;
 
-    display:inline-block;
+    display:inline-flex;
 
-    vertical-align:middle;
 
-    object-fit:contain;
+    align-items:center;
+
+
+    justify-content:center;
+
+
+
+    height:22px;
+
+
+
+    padding:0 10px;
+
+
+
+    font-size:12px;
+
+
+
+    font-weight:700;
+
+
+
+    color:white;
+
+
+
+    line-height:1;
+
+
+
+    background:
+
+
+    linear-gradient(
+        135deg,
+        #3b82f6,
+        #8b5cf6
+    );
+
+
+
+    border-radius:999px;
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.25);
+
+
+
+    box-shadow:
+
+
+    0 4px 14px rgba(99,102,241,.45);
+
 
 }
 
@@ -346,9 +400,17 @@ footer{
 
 
 
-    .recommend-icon{
+    .recommend-badge{
 
-        height:24px;
+
+        height:21px;
+
+
+        padding:0 9px;
+
+
+        font-size:11px;
+
 
     }
 
