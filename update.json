@@ -1,0 +1,15 @@
+{
+  "version": "10.0.0",
+  "title": "万万同学-Dola 内部版 V10 正式版",
+  "date": "2026-08-24",
+  "download": "https://github.com/xvan999/wanwan-portal/releases/download/v10.0.0/WanwanDolaSetup.exe",
+  "content": [
+    "新增账号搜索功能",
+    "新增下载位置自定义",
+    "新增账号信息查看",
+    "新增插件支持双格式视频无水印解析",
+    "新增插件图片识别解析",
+    "账号独立指纹加强",
+    "其他多处优化和bug修复"
+  ]
+}
