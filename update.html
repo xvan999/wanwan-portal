@@ -238,8 +238,6 @@ margin:25px 0;
 
 .content{
 
-white-space:pre-line;
-
 color:#ddd;
 
 line-height:1.9;
@@ -409,14 +407,7 @@ SOFTWARE UPDATE CENTER
 <script>
 
 
-const repo =
-"xvan999/wanwan-portal";
-
-
-
-fetch(
-`https://api.github.com/repos/${repo}/releases/latest`
-)
+fetch("update.json")
 
 
 .then(res=>res.json())
@@ -425,46 +416,40 @@ fetch(
 .then(data=>{
 
 
-let asset =
-data.assets.find(
-item=>item.name.endsWith(".exe")
-);
+document.getElementById("update").innerHTML = `
 
 
-
-let download =
-asset
-?
-asset.browser_download_url
-:
-"#";
-
-
-
-document.getElementById("update").innerHTML=`
 
 <div class="version">
 
+
 <h2>
-${data.name}
+
+${data.title}
+
 </h2>
 
 
+
 <div class="tag">
+
 最新版
+
 </div>
 
 
 </div>
+
 
 
 
 <div class="time">
 
 发布时间：
-${new Date(data.published_at).toLocaleDateString()}
+${data.date}
 
 </div>
+
 
 
 
@@ -472,21 +457,28 @@ ${new Date(data.published_at).toLocaleDateString()}
 
 
 
+
 <div class="content">
 
-${data.body || "暂无更新说明"}
+${data.content
+.map(item=>"• "+item)
+.join("<br>")}
 
 </div>
 
 
 
+
 <a class="download"
 
-href="${download}">
+href="${data.download}"
+
+target="_blank">
 
 立即下载 Windows版
 
 </a>
+
 
 
 `;
@@ -499,15 +491,15 @@ href="${download}">
 .catch(()=>{
 
 
-document.getElementById("update").innerHTML=
+document.getElementById("update").innerHTML = `
 
-`
 
 <div class="loading">
 
 获取更新失败，请稍后重试
 
 </div>
+
 
 `;
 
