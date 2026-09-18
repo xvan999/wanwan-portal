@@ -3,402 +3,591 @@
 }
 
 
+html,
 body{
-
     margin:0;
+    padding:0;
+}
 
+
+body{
     min-height:100vh;
 
     font-family:
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
+    "Microsoft YaHei",
     sans-serif;
 
-    color:white;
+    color:#fff;
 
     background:#050505;
-
 }
 
 
 
+/* =========================
+   背景
+========================= */
+
 .background{
-
     position:fixed;
-
     inset:0;
 
     background:
-
     radial-gradient(
-        circle at top,
-        rgba(99,102,241,.35),
-        transparent 40%
+        circle at 50% 0%,
+        rgba(76,83,210,.32),
+        transparent 39%
     ),
-
     radial-gradient(
-        circle at bottom,
-        rgba(168,85,247,.25),
-        transparent 45%
+        circle at 50% 100%,
+        rgba(132,55,188,.24),
+        transparent 43%
     );
 
     z-index:-1;
-
 }
 
 
 
+/* =========================
+   页面
+========================= */
 
 .container{
-
     width:100%;
-
     max-width:760px;
 
-    margin:auto;
+    margin:0 auto;
 
-    padding:80px 20px 60px;
-
+    padding:
+    68px
+    20px
+    56px;
 }
 
 
 
-
+/* =========================
+   顶部品牌
+========================= */
 
 .logo-area{
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
 
     text-align:center;
-
 }
-
-
-
 
 
 .logo{
+    display:block;
 
     width:90px;
-
     height:90px;
-
-    border-radius:24px;
 
     object-fit:cover;
 
-    margin-bottom:22px;
+    border-radius:24px;
 
+    margin:0 0 22px;
 }
 
 
-
-
-
 .logo-area h1{
-
     margin:0;
 
     font-size:38px;
 
+    line-height:1.15;
+
     font-weight:700;
 
+    letter-spacing:-1px;
 }
-
-
-
 
 
 .logo-area p{
+    margin:
+    13px
+    0
+    0;
 
-    margin-top:12px;
+    font-size:17px;
 
-    color:#aaa;
-
-    font-size:18px;
-
+    color:
+    rgba(255,255,255,.62);
 }
-
-
-
 
 
 .english-title{
-
     margin-top:18px;
 
-    font-size:11px;
-
-    letter-spacing:5px;
-
-    color:rgba(255,255,255,.28);
-
-    text-transform:uppercase;
+    font-size:10px;
 
     font-weight:500;
 
+    letter-spacing:5px;
+
+    color:
+    rgba(255,255,255,.27);
 }
 
 
 
+/* =========================
+   卡片列表
+========================= */
 
-
-.cards{
+.portal-list{
+    width:100%;
 
     display:flex;
-
     flex-direction:column;
 
     gap:18px;
 
     margin-top:38px;
-
 }
 
 
 
+/* =========================
+   卡片
+========================= */
 
+.portal-card{
+    width:100%;
 
-
-.card{
+    min-height:122px;
 
     display:flex;
+    flex-direction:column;
 
     align-items:center;
+    justify-content:center;
 
-    gap:20px;
+    gap:11px;
 
-    padding:22px;
+    padding:
+    20px
+    24px;
+
+
+    text-align:center;
+
+
+    color:#fff;
 
     text-decoration:none;
 
-    color:white;
-
 
     background:
-
-    rgba(255,255,255,.08);
-
-
-
-    backdrop-filter:blur(20px);
-
+    rgba(255,255,255,.075);
 
 
     border:
-
-    1px solid rgba(255,255,255,.12);
-
+    1px solid
+    rgba(255,255,255,.14);
 
 
     border-radius:24px;
 
 
-    transition:.3s;
+    backdrop-filter:
+    blur(22px);
 
+    -webkit-backdrop-filter:
+    blur(22px);
+
+
+    transition:
+    transform .22s ease,
+    background .22s ease,
+    border-color .22s ease,
+    box-shadow .22s ease;
 }
 
 
-
-
-
-.card:hover{
-
-    transform:translateY(-5px);
+.portal-card:hover{
+    transform:
+    translateY(-4px);
 
     background:
+    rgba(255,255,255,.105);
 
-    rgba(255,255,255,.15);
+    border-color:
+    rgba(255,255,255,.20);
 
+    box-shadow:
+    0 12px 32px
+    rgba(0,0,0,.18);
 }
 
 
 
+/* =========================
+   卡片图标
+========================= */
+
+.portal-icon{
+    width:42px;
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    margin:0 auto;
 
 
-.icon{
+    font-size:31px;
 
-    font-size:35px;
-
+    line-height:1;
 }
 
 
 
+/* =========================
+   卡片文字区域
+========================= */
+
+.portal-copy{
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+}
 
 
-.card h2{
+.portal-copy h2{
+    margin:0;
 
-    margin:0 0 8px;
+    padding:0;
 
     font-size:20px;
 
     font-weight:700;
 
+    line-height:1.25;
+
+    text-align:center;
 }
 
 
+.portal-desc{
+    width:100%;
 
-
-
-.card span{
-
-    color:#aaa;
+    margin-top:8px;
 
     font-size:14px;
 
+    line-height:1.5;
+
+    color:
+    rgba(255,255,255,.62);
+
+    text-align:center;
 }
 
 
 
+/* =========================
+   AI 标题行
+========================= */
 
-
-/* AI标题 */
-
-.title-with-icon{
+.portal-title-line{
+    width:100%;
 
     display:flex;
 
     align-items:center;
 
-    gap:8px;
+    justify-content:center;
 
-    margin:0 0 8px;
+    gap:9px;
 
-    font-size:20px;
+    flex-wrap:nowrap;
 
-    font-weight:700;
-
+    text-align:center;
 }
 
 
 
+/* =========================
+   Seedance AI 徽章
+========================= */
 
+.seedance-badge{
+    position:relative;
 
-/* 推荐小标签 */
-
-.recommend-badge{
+    flex:0 0 auto;
 
 
     display:inline-flex;
 
-
     align-items:center;
-
 
     justify-content:center;
 
+    gap:4px;
 
 
-    height:18px;
+    height:23px;
 
-
-
-    padding:0 8px;
-
-
-
-    font-size:11px;
-
-
-
-    font-weight:600;
-
-
-
-    color:white;
-
-
-
-    line-height:1;
-
-
-
-    background:
-
-
-    linear-gradient(
-        135deg,
-        rgba(59,130,246,.85),
-        rgba(139,92,246,.85)
-    );
-
+    padding:
+    0
+    10px;
 
 
     border-radius:999px;
 
 
+    overflow:hidden;
+
+
+    white-space:nowrap;
+
+
+    font-size:11px;
+
+    font-weight:700;
+
+    line-height:1;
+
+
+    color:#fff;
+
+
+    background:
+    linear-gradient(
+        110deg,
+        #06b6d4 0%,
+        #3b82f6 24%,
+        #6366f1 48%,
+        #8b5cf6 72%,
+        #d946ef 100%
+    );
+
 
     border:
-
-    1px solid rgba(255,255,255,.18);
-
+    1px solid
+    rgba(255,255,255,.28);
 
 
     box-shadow:
+    0 0 9px
+    rgba(59,130,246,.25),
+    0 0 17px
+    rgba(139,92,246,.16);
+}
 
 
-    0 2px 8px rgba(99,102,241,.25);
+
+/* 流光 */
+
+.seedance-badge::after{
+    content:"";
+
+    position:absolute;
+
+    top:-20%;
+    bottom:-20%;
+
+    width:28px;
+
+    left:-42px;
 
 
+    transform:
+    skewX(-22deg);
+
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.34),
+        transparent
+    );
+
+
+    animation:
+    seedanceShine
+    4.2s
+    ease-in-out
+    infinite;
+}
+
+
+.seedance-star{
+    position:relative;
+
+    z-index:1;
+
+    font-size:10px;
+
+    color:#fff;
+
+    text-shadow:
+    0 0 6px
+    rgba(255,255,255,.75);
+}
+
+
+@keyframes seedanceShine{
+
+    0%,
+    58%{
+        left:-42px;
+    }
+
+    78%{
+        left:110%;
+    }
+
+    100%{
+        left:110%;
+    }
 
 }
 
 
 
-
+/* =========================
+   页脚
+========================= */
 
 footer{
+    width:100%;
+
+    margin-top:48px;
 
     text-align:center;
 
-    margin-top:50px;
+    font-size:13px;
 
-    color:#666;
+    line-height:1.7;
 
-    font-size:14px;
+    color:
+    rgba(255,255,255,.30);
+}
+
+
+
+/* =========================
+   手机
+========================= */
+
+@media(max-width:500px){
+
+    .container{
+        padding:
+        54px
+        16px
+        44px;
+    }
+
+
+    .logo{
+        width:78px;
+        height:78px;
+
+        border-radius:21px;
+    }
+
+
+    .logo-area h1{
+        font-size:32px;
+    }
+
+
+    .logo-area p{
+        font-size:15px;
+    }
+
+
+    .english-title{
+        font-size:9px;
+
+        letter-spacing:3.6px;
+    }
+
+
+    .portal-list{
+        margin-top:32px;
+
+        gap:14px;
+    }
+
+
+    .portal-card{
+        min-height:116px;
+
+        padding:
+        18px
+        14px;
+    }
+
+
+    .portal-icon{
+        width:38px;
+        height:38px;
+
+        font-size:28px;
+    }
+
+
+    .portal-copy h2{
+        font-size:18px;
+    }
+
+
+    .portal-desc{
+        margin-top:7px;
+
+        font-size:13px;
+    }
+
+
+    .portal-title-line{
+        gap:7px;
+    }
+
+
+    .seedance-badge{
+        height:21px;
+
+        padding:
+        0
+        8px;
+
+        font-size:9.5px;
+    }
 
 }
 
 
 
+/* 关闭动画偏好 */
 
+@media(prefers-reduced-motion:reduce){
 
-
-@media(max-width:500px){
-
-
-    .container{
-
-        padding:60px 18px 50px;
-
+    .seedance-badge::after{
+        animation:none;
     }
-
-
-
-    .logo-area h1{
-
-        font-size:32px;
-
-    }
-
-
-
-    .card{
-
-        padding:18px;
-
-    }
-
-
-
-    .recommend-badge{
-
-        height:17px;
-
-        padding:0 7px;
-
-        font-size:10px;
-
-    }
-
 
 }
