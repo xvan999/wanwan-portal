@@ -41,6 +41,7 @@ body{
         rgba(76,83,210,.32),
         transparent 39%
     ),
+
     radial-gradient(
         circle at 50% 100%,
         rgba(132,55,188,.24),
@@ -53,7 +54,7 @@ body{
 
 
 /* =========================
-   页面
+   页面主体
 ========================= */
 
 .container{
@@ -160,13 +161,13 @@ body{
 
 
 /* =========================
-   卡片
+   单个卡片
 ========================= */
 
 .portal-card{
     width:100%;
 
-    min-height:122px;
+    min-height:116px;
 
     display:flex;
     flex-direction:column;
@@ -174,10 +175,10 @@ body{
     align-items:center;
     justify-content:center;
 
-    gap:11px;
+    gap:9px;
 
     padding:
-    20px
+    22px
     24px;
 
 
@@ -234,22 +235,46 @@ body{
 
 
 /* =========================
-   卡片图标
+   主标题整行
+   图标 + 标题 + Seedance
+========================= */
+
+.portal-main-row{
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    text-align:center;
+}
+
+
+
+/* =========================
+   大图标
 ========================= */
 
 .portal-icon{
-    width:42px;
-    height:42px;
+    flex:0 0 auto;
 
     display:flex;
 
     align-items:center;
     justify-content:center;
 
-    margin:0 auto;
+
+    width:34px;
+    height:34px;
 
 
-    font-size:31px;
+    font-size:29px;
 
     line-height:1;
 }
@@ -257,23 +282,10 @@ body{
 
 
 /* =========================
-   卡片文字区域
+   标题
 ========================= */
 
-.portal-copy{
-    width:100%;
-
-    display:flex;
-    flex-direction:column;
-
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-}
-
-
-.portal-copy h2{
+.portal-main-row h2{
     margin:0;
 
     padding:0;
@@ -282,16 +294,23 @@ body{
 
     font-weight:700;
 
-    line-height:1.25;
+    line-height:1.2;
 
     text-align:center;
+
+    white-space:nowrap;
 }
 
+
+
+/* =========================
+   说明文字
+========================= */
 
 .portal-desc{
     width:100%;
 
-    margin-top:8px;
+    margin-top:1px;
 
     font-size:14px;
 
@@ -306,29 +325,7 @@ body{
 
 
 /* =========================
-   AI 标题行
-========================= */
-
-.portal-title-line{
-    width:100%;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:9px;
-
-    flex-wrap:nowrap;
-
-    text-align:center;
-}
-
-
-
-/* =========================
-   Seedance AI 徽章
+   Seedance 2.5 AI 徽章
 ========================= */
 
 .seedance-badge{
@@ -347,6 +344,7 @@ body{
 
 
     height:23px;
+
 
     padding:
     0
@@ -391,13 +389,14 @@ body{
     box-shadow:
     0 0 9px
     rgba(59,130,246,.25),
+
     0 0 17px
     rgba(139,92,246,.16);
 }
 
 
 
-/* 流光 */
+/* AI流光 */
 
 .seedance-badge::after{
     content:"";
@@ -489,7 +488,7 @@ footer{
 
 
 /* =========================
-   手机
+   手机端
 ========================= */
 
 @media(max-width:500px){
@@ -535,36 +534,34 @@ footer{
 
 
     .portal-card{
-        min-height:116px;
+        min-height:108px;
 
         padding:
         18px
-        14px;
+        12px;
+    }
+
+
+    .portal-main-row{
+        gap:7px;
     }
 
 
     .portal-icon{
-        width:38px;
-        height:38px;
+        width:30px;
+        height:30px;
 
-        font-size:28px;
+        font-size:26px;
     }
 
 
-    .portal-copy h2{
+    .portal-main-row h2{
         font-size:18px;
     }
 
 
     .portal-desc{
-        margin-top:7px;
-
         font-size:13px;
-    }
-
-
-    .portal-title-line{
-        gap:7px;
     }
 
 
@@ -582,7 +579,7 @@ footer{
 
 
 
-/* 关闭动画偏好 */
+/* 用户设置减少动画时关闭流光 */
 
 @media(prefers-reduced-motion:reduce){
 
